@@ -4,3 +4,27 @@ h1
 .images
   - @photos.each do |show|
     = image_tag show.images.low_resolution.url
+
+
+.pagination
+  = link_to 'view more results', nil, id: "load_more_images", remote: true
+
+coffee:
+  $ ->
+    $("#load_more_images").click ->
+      Images.fetch()
+
+  window.Images =
+    container: $(".images") 
+    fetch: ->
+      $.get "images", (data) =>
+        console.log data[0].images.low_resolution.url
+        @display data
+    display: (images) ->
+      _.each images, (image) =>
+        src = image.images.low_resolution.url
+        img = new Image()
+        img.src = src
+        console.log img
+        $(@container).append img
+

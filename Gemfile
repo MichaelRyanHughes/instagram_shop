@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'slim'
 gem 'instagram'
 gem 'json'
+gem 'underscore-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'
