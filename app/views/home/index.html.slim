@@ -1,0 +1,6 @@
+h1
+  | Instagram Photos
+
+.images
+  - @photos.each do |show|
+    = image_tag show.images.standard_resolution.url
