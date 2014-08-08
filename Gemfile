@@ -10,6 +10,7 @@ gem 'slim'
 gem 'instagram'
 gem 'json'
 gem 'underscore-rails'
+gem 'pry-nav'
 
 gem 'jquery-rails'
 gem 'turbolinks'
