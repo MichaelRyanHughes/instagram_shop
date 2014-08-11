@@ -1,0 +1,110 @@
+h1 {
+  font-family: georgia;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 354px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 29px;
+  margin-left: 36.5%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  color: black;
+  border-bottom: solid black 1px;
+
+}
+
+// .images {
+//   margin-left: 3.5%;
+//   .thumbnail {
+//     opacity: 1;
+//     .purchase {
+//       display: none;
+//       a {
+//         opacity: 0;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+//   img {
+//     padding: 6px;
+//     margin: 6px;
+//     border: 1px solid lightgray;
+//     &:hover {
+//       opacity: .25;
+//       .purchase {
+//         display: inline-block;
+//         a {
+//           opacity: 1;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.images {
+  margin-left: 2.1%;
+  .thumbnail {
+    position: relative;
+    display: inline-block;
+    border: 1px solid lightgray;
+    margin: 6px;
+    .purchase {
+      display: none;
+      text-decoration: none;
+    }
+    .zoom {
+      display: none;
+    }
+    img {
+      opacity: 1;
+      padding: 6px;
+      margin-bottom: 2px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 6px;
+    }
+    &:hover {
+      img {
+        opacity: .4;
+      }
+      .purchase {
+        position: absolute;
+        top: 270px;
+        margin-left: -1px;
+        display: block;
+        color: white;
+        background-color: black;
+        width: 60px;
+        padding: 8px;
+        padding-left: 30px;
+        padding-right: 28px;
+      }
+      .zoom {
+        position: absolute;
+        top: 270px;
+        margin-left: 117px;
+        display: block;
+        color: white;
+        background-color: red;
+        width: 15px;
+        padding: 7.5px;
+        padding-left: 12px;
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+.pagination {
+  font-family: georgia;
+  margin-left: 45%;
+  a {
+    text-decoration: none;
+    &:hover {
+      border-bottom: solid black 1px;
+      color: gray;
+    }
+  }
+}

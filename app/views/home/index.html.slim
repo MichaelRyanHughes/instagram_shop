@@ -1,13 +1,15 @@
 
 h1
-  | Instagram Photos
+  | jason somerset greene 
 
 .images
   - @photos.each do |show|
-    = image_tag show.images.low_resolution.url, 'data-image_id'=> show.id.split("_")[0]
-    //max_id: '452467253150086099'
-
-
+    .thumbnail
+      = image_tag show.images.low_resolution.url, 'data-image_id'=> show.id.split("_")[0]
+      //max_id: '452467253150086099'
+      = link_to 'buy print', '', class: "purchase"
+      .zoom
+        | &#9906
 
 .pagination
   = link_to 'view more results', nil, id: "load_more_images", remote: true
