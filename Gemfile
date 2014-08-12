@@ -11,6 +11,7 @@ gem 'instagram'
 gem 'json'
 gem 'underscore-rails'
 gem 'pry-nav'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem 'jquery-rails'
 gem 'turbolinks'

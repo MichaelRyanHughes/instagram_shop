@@ -2,9 +2,14 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+#instagram keys
 INSTAGRAM_CLIENT_ID = "12fcdf7fa7c84507916ec01c7ee73c84"
 INSTAGRAM_TOKEN = "234675123.12fcdf7.5777ff9bf14645be8e2d2bd81c7f3549"
 INSTAGRAM_UID = "234675123"
+
+#stripe keys
+PUBLISHABLE_KEY = 'pk_test_4ZtfsJSXfL5yQ0puXYwTN70j'
+SECRET_KEY = 'sk_test_4ZtflpPasQlDGkijIp7YW4x8'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

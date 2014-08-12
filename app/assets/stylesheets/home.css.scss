@@ -42,13 +42,17 @@ h1 {
 //     }
 //   }
 // }
+html {
+  background-color: #FBFBFB;
+}
 
 .images {
   margin-left: 2.1%;
   .thumbnail {
+    background-color: white;
     position: relative;
     display: inline-block;
-    border: 1px solid lightgray;
+    border: 1px solid #E2E2E2;
     margin: 6px;
     .purchase {
       display: none;
