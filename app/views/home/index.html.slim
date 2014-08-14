@@ -7,7 +7,7 @@ h1
     .thumbnail
       = image_tag show.images.low_resolution.url, 'data-image_id'=> show.id.split("_")[0]
       //max_id: '452467253150086099'
-      = link_to 'buy print', charges_path, class: "purchase"
+      = link_to 'buy print', new_order_path, class: "purchase"
       .zoom
         | &#9906
 

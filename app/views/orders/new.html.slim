@@ -1,0 +1,38 @@
+h1
+  | shipping information
+
+//image that was "purchased" and clicked should appear above the form, and the id# needs to be saved to 
+//the order model with the rest of the form contents when it is submitted.
+image_tag()
+
+ul
+  = form_for @order, url: {action: "create"} do |f|
+    li
+        = f.label :first_name
+        = f.text_field :first_name
+    li        
+        = f.label :last_name
+        = f.text_field :last_name
+    li
+        = f.label :email
+        = f.text_field :email
+    li    
+        = f.label :address_line_1
+        = f.text_field :address_line_1
+    li
+        = f.label :address_line_2
+        = f.text_field :address_line_2
+    li
+        = f.label :city
+        = f.text_field :city
+    li
+        = f.label :state
+        = f.text_field :state
+    li
+        = f.label :zip_code
+        = f.text_field :zip_code
+    li
+        = f.submit
+
+p
+  = link_to 'check out', new_charge_path
