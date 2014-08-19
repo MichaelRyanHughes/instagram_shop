@@ -3,10 +3,19 @@ h1
 
 //image that was "purchased" and clicked should appear above the form, and the id# needs to be saved to 
 //the order model with the rest of the form contents when it is submitted.
-image_tag()
+//img src= 'http://photos-c.ak.instagram.com/hphotos-ak-xpf1/#{@order.instagram_id}_n.jpg'
+//img src= 'http://scontent-b.cdninstagram.com/hphotos-xfp1/t51.2885-15/#{@order.instagram_id}_a.jpg'
+//= image_tag @order.images.low_resolution.url
+//img src= "#{@order.photo_url}"
+//= JSON.parse @jason_pic.to_json
+= image_tag @jason_pic
 
 ul
   = form_for @order, url: {action: "create"} do |f|
+
+    li
+        = f.label :instagram_image_number
+        = f.text_field :instagram_id 
     li
         = f.label :first_name
         = f.text_field :first_name
