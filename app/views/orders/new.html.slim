@@ -9,8 +9,9 @@ h1
 //img src= "#{@order.photo_url}"
 //= JSON.parse @jason_pic.to_json
 = image_tag @jason_pic
-
+= "image-id: #{@order.instagram_id}"
 ul
+
   = form_for @order, url: {action: "create"} do |f|
 
     li

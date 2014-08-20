@@ -1,0 +1,19 @@
+h3
+  | Hi Jason, this order is ready to be printed and shipped.
+
+h4
+  = "Order ##{@order.id} Details"
+
+h3
+  | Instagram Image
+p
+  = @jason_pic
+p 
+  | Shipping Address: 
+ul
+  li
+    = "#{@order.first_name.capitalize} #{@order.last_name.capitalize}"
+  li
+    = "#{@order.address_line_1}, #{@order.address_line_2}"
+  li
+    = "#{@order.city}, #{@order.state}, #{@order.zip_code}" 

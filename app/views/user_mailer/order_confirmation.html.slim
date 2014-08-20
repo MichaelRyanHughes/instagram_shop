@@ -1,0 +1,19 @@
+h3
+  | Your order from JSG Photography!
+
+p
+  = "Thanks #{@order.first_name.capitalize}! "
+  | Your order has been received, and is currently being processed. 
+  | Please allow 3 - 5 weeks for delivery.
+
+h4
+  = "Order ##{@order.id} Details"
+p 
+  | Shipping Address: 
+ul
+  li
+    = "#{@order.first_name.capitalize} #{@order.last_name.capitalize}"
+  li
+    = "#{@order.address_line_1}, #{@order.address_line_2}"
+  li
+    = "#{@order.city}, #{@order.state}, #{@order.zip_code}" 
