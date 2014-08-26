@@ -5,6 +5,6 @@
         | Amount: $5.00
 
   script src= "https://checkout.stripe.com/checkout.js" class="stripe-button"
-         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+         data-key="<%= Rails.configuration.stripe[PUBLISHABLE_KEY] %>"
          data-description="A month's subscription"
          data-amount="500"

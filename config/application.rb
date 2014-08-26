@@ -8,8 +8,8 @@ INSTAGRAM_TOKEN = "234675123.12fcdf7.5777ff9bf14645be8e2d2bd81c7f3549"
 INSTAGRAM_UID = "234675123"
 
 #stripe keys
-PUBLISHABLE_KEY = 'pk_test_4ZtfsJSXfL5yQ0puXYwTN70j'
-SECRET_KEY = 'sk_test_4ZtflpPasQlDGkijIp7YW4x8'
+PUBLISHABLE_KEY = "pk_test_4ZtfsJSXfL5yQ0puXYwTN70j"
+SECRET_KEY = "sk_test_4ZtflpPasQlDGkijIp7YW4x8"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

@@ -20,7 +20,7 @@ class OrdersController < ApplicationController
     @order = Order.create params[:order].permit :instagram_id, :photo_url, :first_name, :last_name, :email, :address_line_1, :address_line_2, :city, :state, :zip_code
     redirect_to new_charge_path
     
-    @jason_pic = Instagram.media_item(@order.instagram_id).images.standard_resolution.url
+    @jason_pic_ = Instagram.media_item(@order.instagram_id).images.standard_resolution.url
     
     if @order.save
       UserMailer.order_confirmation(@order).deliver
