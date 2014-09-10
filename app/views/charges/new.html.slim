@@ -4,7 +4,10 @@
       span
         | Amount: $5.00
 
-  script src= "https://checkout.stripe.com/checkout.js" class="stripe-button"
-         data-key="<%= Rails.configuration.stripe[PUBLISHABLE_KEY] %>"
-         data-description="A month's subscription"
-         data-amount="500"
+  = javascript_include_tag "https://checkout.stripe.com/checkout.js", class: "stripe-button", data: {key: PUBLISHABLE_KEY, amount: 500, order_id: @order.id}
+
+  //script src= "https://checkout.stripe.com/checkout.js" class="stripe-button"
+         //data-key= "#{PUBLISHABLE_KEY}" 
+         //data-order-id= "#{@order.id}"
+         //data-description="A month's subscription"
+         //data-amount="500"

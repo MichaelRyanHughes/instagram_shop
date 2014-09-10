@@ -1,9 +1,7 @@
 class Order < ActiveRecord::Base
-  #before_save :validate_payment
-
-  #private 
-    #def validate_payment
-      #Stripe.create
-      #end
-    #end
+    STATUS_PAID = "paid"
+    
+    def confirm_payment
+      update_attribute(:payment_status, STATUS_PAID) 
+    end
 end
