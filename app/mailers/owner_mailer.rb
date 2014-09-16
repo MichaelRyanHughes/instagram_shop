@@ -12,5 +12,6 @@ class OwnerMailer < ActionMailer::Base
     @jason_pic = jason_pic
 
     mail to: "michaelryanhughes@gmail.com", subject: "New Order ##{order.id}"
+    #mail to: "somersetgreene@gmail.com", subject: "New Order ##{orcer.id}, is ready to ship."
   end
 end

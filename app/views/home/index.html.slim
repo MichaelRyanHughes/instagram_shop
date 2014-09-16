@@ -1,19 +1,16 @@
-.container-fluid
-  .page-header
-    .title
-      h1
-        | jason somerset greene 
-.row
-  .col-md-12
-    .images
-      - @photos.each do |show|
-        .thumbnail
-          = image_tag show.images.low_resolution.url, 'data-image_id'=> show.id.split("_")[0]
-          //max_id: '452467253150086099'
-          = link_to 'buy print', new_order_path(instagram_id: show.id), class: "purchase"
-          //= photo_url: show.images.standard_resolution.url
-          .zoom
-            | &#9906
+
+.page-header
+  .title
+    h1
+      | jason somerset greene 
+
+.images
+  - @photos.each do |show|
+    .thumbnail
+      = image_tag show.images.low_resolution.url, 'data-image_id'=> show.id.split("_")[0]
+      = link_to 'buy print', new_order_path(instagram_id: show.id), class: "purchase"
+      .zoom
+        | &#9906
 
 .pagination
-  = link_to 'view more results', nil, id: "load_more_images", remote: true
+= link_to 'view more results', nil, id: "load_more_images", remote: true

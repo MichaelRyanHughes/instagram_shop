@@ -23,15 +23,5 @@ class OrdersController < ApplicationController
     #binding.pry
     @order = Order.create params[:order].permit :payment_status, :instagram_id, :photo_url, :first_name, :last_name, :email, :address_line_1, :address_line_2, :city, :state, :zip_code
     redirect_to new_charge_path(id: @order.id)
-    
-    @jason_pic_ = Instagram.media_item(@order.instagram_id).images.standard_resolution.url
-    
-    if @order.payment_status = "paid"
-    #if @order.payment_status = "paid"
-      UserMailer.order_confirmation(@order).deliver
-      OwnerMailer.new_order_alert(@order, @jason_pic).deliver
-    else
-      render :new
-    end
   end
 end

@@ -1,91 +1,89 @@
-.container-fluid {
-  .page-header {
-    .title {
-      width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      h1 {
-        font-family: georgia;
-        font-weight: 100;
-        letter-spacing: 2px;
-        text-align: center;
-        width: 354px;
-        padding-right: 30px;
+
+.page-header {
+  .title {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    h1 {
+      font-family: georgia;
+      font-weight: 100;
+      letter-spacing: 2px;
+      text-align: center;
+      width: 354px;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-bottom: 29px;
+      margin-left: 36.5%;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      color: black;
+      border-bottom: solid black 1px;
+    }
+  }
+}
+
+
+.images {
+  margin-left: 2.1%;
+  .thumbnail {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    //margin: 6px;
+    width: 330px;
+    height: 330px;
+    .purchase {
+      display: none;
+      text-decoration: none;
+      opacity: 0;
+    }
+    .zoom {
+      display: none;
+      opacity: 0;
+    }
+    img {
+      opacity: 1;
+      -webkit-transition: opacity .25s ease-in-out;
+      padding: 6px;
+      margin-bottom: 2px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 6px;
+    }
+    &:hover {
+      img {
+        opacity: .4;
+      }
+      .purchase {
+        position: absolute;
+        top: 270px;
+        margin-left: -1px;
+        display: block;
+        color: white;
+        background-color: black;
+        width: 60px;
+        padding: 8px;
         padding-left: 30px;
-        padding-bottom: 29px;
-        margin-left: 36.5%;
-        margin-bottom: 40px;
-        margin-top: 40px;
-        color: black;
-        border-bottom: solid black 1px;
+        padding-right: 28px;
+        opacity: 1;
+      }
+      .zoom {
+        position: absolute;
+        top: 270px;
+        margin-left: 117px;
+        display: block;
+        color: white;
+        background-color: red;
+        width: 15px;
+        padding: 7.5px;
+        padding-left: 12px;
+        padding-right: 8px;
+        opacity: 1;
       }
     }
   }
 }
-.row {
-  .col-md-12 {
-    .images {
-      margin-left: 2.1%;
-      .thumbnail {
-        background-color: white;
-        position: relative;
-        display: inline-block;
-        //margin: 6px;
-        width: 330px;
-        height: 330px;
-        .purchase {
-          display: none;
-          text-decoration: none;
-          opacity: 0;
-        }
-        .zoom {
-          display: none;
-          opacity: 0;
-        }
-        img {
-          opacity: 1;
-          -webkit-transition: opacity .25s ease-in-out;
-          padding: 6px;
-          margin-bottom: 2px;
-          margin-left: 5px;
-          margin-right: 5px;
-          margin-top: 6px;
-        }
-        &:hover {
-          img {
-            opacity: .4;
-          }
-          .purchase {
-            position: absolute;
-            top: 270px;
-            margin-left: -1px;
-            display: block;
-            color: white;
-            background-color: black;
-            width: 60px;
-            padding: 8px;
-            padding-left: 30px;
-            padding-right: 28px;
-            opacity: 1;
-          }
-          .zoom {
-            position: absolute;
-            top: 270px;
-            margin-left: 117px;
-            display: block;
-            color: white;
-            background-color: red;
-            width: 15px;
-            padding: 7.5px;
-            padding-left: 12px;
-            padding-right: 8px;
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-}
+
 .pagination {
   font-family: georgia;
   margin-left: 45%;

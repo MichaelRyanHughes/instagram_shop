@@ -23,17 +23,11 @@ class ChargesController < ApplicationController
       :description => 'Rails Stripe customer',
       :currency    => 'usd',
     )
-    #session[:id]
-    #@order = Order.find_by_id(params[:order][id:@order])
-    #@order.update_attribute :payment_status, "paid"
-    #update order in model
-    #if successful, set session id to nil
 
     order = Order.find(session[:id])
-      if order.confirm_payment
-        reset_session
-      end
-    binding.pry
+    if order.confirm_payment
+      reset_session
+    end
     redirect_to success_order_path(order)
 
   rescue Stripe::CardError => e
