@@ -1,16 +1,18 @@
+.title
+  h1
+    | somerset 
+    span GREENE
 
-.page-header
-  .title
-    h1
-      | jason somerset greene 
-
+  .navigation
+    ul
+      li = link_to "contact", "mailto:somersetgreene@gmail.com", target: "blank"
+      li = link_to "instagram", "http://instagram.com/somersetgreene", target: "blank"
+      //li = link_to "print info", class: "print_info"
 .images
   - @photos.each do |show|
     .thumbnail
       = image_tag show.images.low_resolution.url, 'data-image_id'=> show.id.split("_")[0]
-      = link_to 'buy print', new_order_path(instagram_id: show.id), class: "purchase"
-      .zoom
-        | &#9906
+      = link_to 'buy 12x12 print', new_order_path(instagram_id: show.id), class: "purchase"
 
 .pagination
-= link_to 'view more results', nil, id: "load_more_images", remote: true
+  = link_to 'view more images', nil, id: "load_more_images", remote: true, class: "view_more"

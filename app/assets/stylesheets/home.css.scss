@@ -1,97 +1,160 @@
 
-.page-header {
-  .title {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    h1 {
-      font-family: georgia;
-      font-weight: 100;
+
+.title {
+  width: 100%;
+  height: 234px;
+  position: fixed;
+  z-index: 1000;
+  background-color: black;
+  opacity: .8;
+  padding-bottom: 0px;
+  top: 0;
+  h1 {
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 6px;
+    line-height: 34px;
+    text-align: left;
+    color: black;
+    background-color: white;
+    padding-bottom: 0px;
+    padding-right: 25px;
+    padding-left: 14px;
+    padding-bottom: 4px;
+    padding-top: 162px;
+    margin-top: 0px;
+    margin-left: 7.5%;
+    margin-bottom: 0px;
+    width: 100px;
+  }
+  span {
+    letter-spacing: 6px;
+    font-size: 20px;
+    color: black;
+    padding-left: 5px;
+    padding-top: 2px;
+    margin-left: -4px;
+    background-color: white;
+  }
+  .navigation {
+    display: block;
+    float: left;
+    margin-top: 20px;
+    ul {
+      font-family: sans-serif;
+      font-size: 14px;
+      margin-left: 18%;
+      margin-top: 0px;
+      padding: 0px;
       letter-spacing: 2px;
-      text-align: center;
-      width: 354px;
-      padding-right: 30px;
-      padding-left: 30px;
-      padding-bottom: 29px;
-      margin-left: 36.5%;
-      margin-bottom: 40px;
-      margin-top: 40px;
-      color: black;
-      border-bottom: solid black 1px;
+      li.print_info{
+        &:hover {
+          color: blue;
+        }
+      }
+      li {
+        width: 75px;
+        height: 15px;
+        padding-bottom: 3px;
+        margin-bottom: 13px;
+        a {
+          text-decoration: none;
+          padding-bottom: 1px;
+          color: white;
+          &:hover {
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+          }
+        }
+      }
     }
   }
 }
 
 
+
 .images {
-  margin-left: 2.1%;
+  width: 100%;
+  margin: auto;
+  margin-top: 234px;
+  overflow: hidden;
   .thumbnail {
     background-color: white;
     position: relative;
     display: inline-block;
-    //margin: 6px;
-    width: 330px;
-    height: 330px;
+    float: left;
+    width: 360px;
+    height: 360px;
     .purchase {
       display: none;
       text-decoration: none;
-      opacity: 0;
-    }
-    .zoom {
-      display: none;
-      opacity: 0;
     }
     img {
       opacity: 1;
       -webkit-transition: opacity .25s ease-in-out;
-      padding: 6px;
-      margin-bottom: 2px;
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-top: 6px;
+      padding: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 0px;
+      width: 360px;
     }
     &:hover {
       img {
         opacity: .4;
       }
       .purchase {
+        top: 92.9%;
+        font-family: sans-serif;
         position: absolute;
-        top: 270px;
-        margin-left: -1px;
+        float: left;
+        margin: auto;
         display: block;
+        letter-spacing: 3px;
         color: white;
         background-color: black;
-        width: 60px;
-        padding: 8px;
-        padding-left: 30px;
-        padding-right: 28px;
-        opacity: 1;
-      }
-      .zoom {
-        position: absolute;
-        top: 270px;
-        margin-left: 117px;
-        display: block;
-        color: white;
-        background-color: red;
-        width: 15px;
-        padding: 7.5px;
-        padding-left: 12px;
-        padding-right: 8px;
-        opacity: 1;
+        width: 154px;
+        padding: 6px;
+        padding-left: 19px;
+        padding-right: 187px;
+        padding-top: 5px;
+        font-weight: lighter;
+        font-size: 15px;
+        &:hover {
+          color: gray;
+        }
       }
     }
   }
 }
 
 .pagination {
-  font-family: georgia;
-  margin-left: 45%;
-  a {
+  font-family: sans-serif;
+  width: 186px;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 0px;
+  .view_more {
     text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    line-height: 108px;
+    font-weight: 100;
+    &:visited{
+      color: black;
+    }
     &:hover {
-      border-bottom: solid black 1px;
-      color: gray;
+      background-color: black;
+      border-style: solid;
+      border-width: 2px;
+      border-color: black;
+      color: white;
     }
   }
 }

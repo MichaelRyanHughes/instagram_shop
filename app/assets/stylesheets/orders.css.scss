@@ -1,0 +1,63 @@
+
+
+.shipping_header {
+  h1 {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 42px;
+    width: 440px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.image {
+  display: block;
+  float: left;
+  width: 640px;
+  margin: auto;
+  margin-left: 4%;
+  margin-top: 0px;
+  p {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    color: gray;
+    width: 213px;
+    margin: auto;
+  }
+}
+
+.form {
+  font-family: sans-serif;
+  display: block;
+  float: left;
+  margin-top: 120px;
+  margin-left: 2%;
+  width: 420px;
+  height: 340px;
+  padding-top: 40px;
+  padding-right: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  ul {
+    display: inline;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: right;
+    .text_field {
+      margin-left: 15px;
+      width: 260px;
+    }
+    p {
+      font-family: sans-serif;
+      font-weight: lighter;
+      font-style: italic;
+      color: gray;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  }
+}

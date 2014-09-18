@@ -25,7 +25,7 @@ $ ->
         console.log(' image ids are built')
         #href = '/orders/new?instagram_id=#{image.id}'
         #img = $("<div class='thumbnail'><img src=#{src} data-image_id=#{image_id} /><a class='purchase' href= #{href}>buy print</a></div>")
-        img = $("<div class='thumbnail'><img src=#{src} data-image_id=#{image_id} /><a class='purchase' href='/orders/new?instagram_id=#{image.id}'>buy print</a></div>")
+        img = $("<div class='thumbnail'><img src=#{src} data-image_id=#{image_id} /><a class='purchase' href='/orders/new?instagram_id=#{image.id}'>buy 12x12 print</a></div>")
         $(@container).append img
         console.log(' image is added to div class thumbnail')
 
