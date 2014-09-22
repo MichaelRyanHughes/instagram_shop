@@ -50,11 +50,6 @@
       margin-top: 0px;
       padding: 0px;
       letter-spacing: 2px;
-      li.print_info{
-        &:hover {
-          color: blue;
-        }
-      }
       li {
         width: 75px;
         height: 15px;
@@ -133,7 +128,7 @@
 
 .pagination {
   font-family: sans-serif;
-  width: 186px;
+  width: 200px;
   margin: auto;
   font-size: 20px;
   margin-bottom: 0px;

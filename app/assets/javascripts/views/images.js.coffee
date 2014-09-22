@@ -1,6 +1,5 @@
 $ ->
   $("#load_more_images").click ->
-    # TODO get max id on the page and pass it to fetch()
     Images.fetch()
 
   window.Images =
